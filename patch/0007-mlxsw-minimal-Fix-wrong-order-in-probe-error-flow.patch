@@ -1,0 +1,60 @@
+From a8de525422d797eaa098e4f51b5e121438a11a59 Mon Sep 17 00:00:00 2001
+From: Vadim Pasternak <vadimp@mellanox.com>
+Date: Thu, 28 Nov 2019 01:17:59 +0200
+Subject: [PATCH 07/65] mlxsw: minimal: Fix wrong order in probe error flow
+
+Fix wrong order in probe error flow, in case the firmware version is
+incompatible with the driver.
+Validation of firmware version should be provided at early stage, prior
+of initialization of different driver components.
+
+Signed-off-by: Vadim Pasternak <vadimp@mellanox.com>
+---
+ drivers/net/ethernet/mellanox/mlxsw/core.c | 15 +++++++--------
+ 1 file changed, 7 insertions(+), 8 deletions(-)
+
+diff --git a/drivers/net/ethernet/mellanox/mlxsw/core.c b/drivers/net/ethernet/mellanox/mlxsw/core.c
+index c8c25655fba3..34e0480ae24e 100644
+--- a/drivers/net/ethernet/mellanox/mlxsw/core.c
++++ b/drivers/net/ethernet/mellanox/mlxsw/core.c
+@@ -1048,6 +1048,12 @@ int mlxsw_core_bus_device_register(const struct mlxsw_bus_info *mlxsw_bus_info,
+ 			goto err_devlink_register;
+ 	}
+ 
++	if (mlxsw_driver->init) {
++		err = mlxsw_driver->init(mlxsw_core, mlxsw_bus_info);
++		if (err)
++			goto err_driver_init;
++	}
++
+ 	if (mlxsw_driver->params_register && !reload) {
+ 		err = mlxsw_driver->params_register(mlxsw_core);
+ 		if (err)
+@@ -1068,16 +1074,8 @@ int mlxsw_core_bus_device_register(const struct mlxsw_bus_info *mlxsw_bus_info,
+ 	if (err)
+ 		goto err_qsfp_init;
+ 
+-	if (mlxsw_driver->init) {
+-		err = mlxsw_driver->init(mlxsw_core, mlxsw_bus_info);
+-		if (err)
+-			goto err_driver_init;
+-	}
+-
+ 	return 0;
+ 
+-err_driver_init:
+-	mlxsw_qsfp_fini(mlxsw_core->qsfp);
+ err_qsfp_init:
+ 	mlxsw_thermal_fini(mlxsw_core->thermal);
+ err_thermal_init:
+@@ -1086,6 +1084,7 @@ int mlxsw_core_bus_device_register(const struct mlxsw_bus_info *mlxsw_bus_info,
+ 	if (mlxsw_driver->params_unregister && !reload)
+ 		mlxsw_driver->params_unregister(mlxsw_core);
+ err_register_params:
++err_driver_init:
+ 	if (!reload)
+ 		devlink_unregister(devlink);
+ err_devlink_register:
+-- 
+2.17.1
+
