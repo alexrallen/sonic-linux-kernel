@@ -1,4 +1,3 @@
-From fa0ad504487aed6de207c2221b014ad621f7c789 Mon Sep 17 00:00:00 2001
 From: Vadim Pasternak <vadimp@nvidia.com>
 Date: Mon, 22 Mar 2021 19:22:37 +0200
 Subject: [PATCH 12/83] 0012 hwmon: (mlxreg-fan) Add support for hwmon:

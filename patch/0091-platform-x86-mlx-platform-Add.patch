@@ -1,4 +1,3 @@
-From e103ff05fe46babf9ca1fc4462a1c91e08dce6bf Mon Sep 17 00:00:00 2001
 From: Vadim Pasternak <vadimp@nvidia.com>
 Date: Sat, 23 Oct 2021 12:40:22 +0300
 Subject: [PATCH 77/83] 0091 platform/x86: mlx-platform: Add platform/x86:

@@ -1,4 +1,3 @@
-From 2791933c6eb1bd12ae5299f4253ccbea421740e5 Mon Sep 17 00:00:00 2001
 From: Jakub Kicinski <kuba@kernel.org>
 Date: Fri, 20 Nov 2020 14:50:52 -0800
 Subject: [PATCH 16/83] 0016 net: don't include ethtool.h from net: don't

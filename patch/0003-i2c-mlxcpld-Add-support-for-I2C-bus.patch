@@ -1,4 +1,3 @@
-From 48bb70a478c24b3c2aa687ac174eefe8d5309a52 Mon Sep 17 00:00:00 2001
 From: Vadim Pasternak <vadimp@nvidia.com>
 Date: Wed, 6 Jan 2021 01:33:47 +0200
 Subject: [PATCH 03/83] 0003 i2c: mlxcpld: Add support for I2C bus i2c:

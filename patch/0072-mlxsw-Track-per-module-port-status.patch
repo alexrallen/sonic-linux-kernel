@@ -1,4 +1,3 @@
-From 276f5882f88314845e132dfac7fbd6dfbbe41883 Mon Sep 17 00:00:00 2001
 From: Vadim Pasternak <vadimp@nvidia.com>
 Date: Thu, 2 Sep 2021 06:40:22 +0000
 Subject: [PATCH 67/83] 0072 mlxsw: Track per-module port status mlxsw: Track

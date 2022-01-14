@@ -1,4 +1,3 @@
-From 698a2ab5e51631a9b20eaec92ef028f3196701ad Mon Sep 17 00:00:00 2001
 From: Vadim Pasternak <vadimp@nvidia.com>
 Date: Mon, 12 Jul 2021 17:25:30 +0000
 Subject: [PATCH 54/83] 0058 platform/x86: mlx-platform: Configure

@@ -1,4 +1,3 @@
-From 58fb7018028d34df75da865b3ade5db52dafce60 Mon Sep 17 00:00:00 2001
 From: Vadim Pasternak <vadimp@nvidia.com>
 Date: Tue, 6 Jul 2021 05:57:39 +0000
 Subject: [PATCH 43/83] 0044 platform/mellanox: mlxreg-io: Fix

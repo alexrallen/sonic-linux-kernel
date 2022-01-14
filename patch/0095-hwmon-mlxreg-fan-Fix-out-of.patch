@@ -1,4 +1,3 @@
-From 0a28d9b21d72c3620ce8a87861e9358ab5e243ef Mon Sep 17 00:00:00 2001
 From: Colin Ian King <colin.king@canonical.com>
 Date: Mon, 20 Sep 2021 19:09:21 +0100
 Subject: [PATCH 81/83] 0095 hwmon: (mlxreg-fan) Fix out of hwmon: (mlxreg-fan)

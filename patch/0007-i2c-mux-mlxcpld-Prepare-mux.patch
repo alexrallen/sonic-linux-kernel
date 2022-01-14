@@ -1,4 +1,3 @@
-From d7aecbc9e723e6efe3fda62f5dd7d1adf5139eeb Mon Sep 17 00:00:00 2001
 From: Vadim Pasternak <vadimp@nvidia.com>
 Date: Mon, 8 Feb 2021 22:16:02 +0200
 Subject: [PATCH 07/83] 0007 i2c: mux: mlxcpld: Prepare mux i2c: mux: mlxcpld:

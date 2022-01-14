@@ -1,4 +1,3 @@
-From 5445f1830397dce2936627d08bd5bdf8f5bb6534 Mon Sep 17 00:00:00 2001
 From: Vadim Pasternak <vadimp@nvidia.com>
 Date: Fri, 22 Jan 2021 21:24:56 +0200
 Subject: [PATCH 04/83] 0004 i2c: mux: mlxcpld: Update module i2c: mux:

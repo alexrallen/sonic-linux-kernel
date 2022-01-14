@@ -1,4 +1,3 @@
-From f58fc46e8a14301c6a4aa21c5c11edef232e0013 Mon Sep 17 00:00:00 2001
 From: Vadim Pasternak <vadimp@nvidia.com>
 Date: Sat, 10 Jul 2021 07:26:38 +0000
 Subject: [PATCH 47/83] 0048 hwmon: (pmbus/mp2975) Add missed POUT hwmon:

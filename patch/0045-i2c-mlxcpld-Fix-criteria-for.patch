@@ -1,4 +1,3 @@
-From 5b2ec23f35df376b8609d35990e4962429ee6389 Mon Sep 17 00:00:00 2001
 From: Vadim Pasternak <vadimp@nvidia.com>
 Date: Sat, 10 Jul 2021 07:24:22 +0000
 Subject: [PATCH 44/83] 0045 i2c: mlxcpld: Fix criteria for i2c: mlxcpld: Fix

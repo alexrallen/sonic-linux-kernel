@@ -1,4 +1,3 @@
-From 826d6e35c40b6a4102ff2c0022899736aa6fb2aa Mon Sep 17 00:00:00 2001
 From: Vadim Pasternak <vadimp@nvidia.com>
 Date: Mon, 12 Jul 2021 22:04:25 +0000
 Subject: [PATCH 60/83] 0064 hwmon: (mlxreg-fan) Extend the hwmon: (mlxreg-fan)

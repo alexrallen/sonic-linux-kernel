@@ -1,4 +1,3 @@
-From 0550c6197e27fb1392495c0adee40daaf146335a Mon Sep 17 00:00:00 2001
 From: Vadim Pasternak <vadimp@nvidia.com>
 Date: Thu, 25 Mar 2021 20:12:07 +0200
 Subject: [PATCH 55/83] 0059 platform/mellanox: mlxreg-io: Extend

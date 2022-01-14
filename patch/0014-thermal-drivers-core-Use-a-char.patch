@@ -1,4 +1,3 @@
-From 82749fb99c4cb7dc6ed18ad410e4ce11ed7c56e8 Mon Sep 17 00:00:00 2001
 From: Daniel Lezcano <daniel.lezcano@linaro.org>
 Date: Sun, 14 Mar 2021 12:13:29 +0100
 Subject: [PATCH 14/83] 0014 thermal/drivers/core: Use a char

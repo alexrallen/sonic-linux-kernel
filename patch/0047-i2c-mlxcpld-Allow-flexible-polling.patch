@@ -1,4 +1,3 @@
-From 0945a31c07d2beb12cef0c21f9c422dd8d0bcf0b Mon Sep 17 00:00:00 2001
 From: Vadim Pasternak <vadimp@nvidia.com>
 Date: Tue, 6 Jul 2021 18:23:46 +0000
 Subject: [PATCH 46/83] 0047 i2c: mlxcpld: Allow flexible polling i2c: mlxcpld:

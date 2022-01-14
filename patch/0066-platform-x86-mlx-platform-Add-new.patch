@@ -1,4 +1,3 @@
-From 856d4db46fdc5d5075ca56e03fe5fb9260d1b395 Mon Sep 17 00:00:00 2001
 From: Vadim Pasternak <vadimp@nvidia.com>
 Date: Tue, 13 Jul 2021 15:20:13 +0000
 Subject: [PATCH 62/83] 0066 platform/x86: mlx-platform: Add new platform/x86:

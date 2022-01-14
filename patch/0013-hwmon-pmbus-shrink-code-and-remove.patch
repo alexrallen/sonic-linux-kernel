@@ -1,4 +1,3 @@
-From 78b80ee89c53021fee5901c3509ff81f70723117 Mon Sep 17 00:00:00 2001
 From: Bartosz Golaszewski <bgolaszewski@baylibre.com>
 Date: Mon, 26 Oct 2020 11:53:52 +0100
 Subject: [PATCH 13/83] 0013 hwmon: (pmbus) shrink code and remove hwmon:
@@ -18,6 +17,7 @@ Signed-off-by: Guenter Roeck <linux@roeck-us.net>
  drivers/hwmon/pmbus/adm1266.c      |  1 -
  drivers/hwmon/pmbus/adm1275.c      |  1 -
  drivers/hwmon/pmbus/bel-pfe.c      |  1 -
+ drivers/hwmon/pmbus/dni_dps460.c   |  1 -
  drivers/hwmon/pmbus/ibm-cffps.c    |  1 -
  drivers/hwmon/pmbus/inspur-ipsps.c |  1 -
  drivers/hwmon/pmbus/ir35221.c      |  1 -
@@ -45,7 +45,7 @@ Signed-off-by: Guenter Roeck <linux@roeck-us.net>
  drivers/hwmon/pmbus/ucd9200.c      |  1 -
  drivers/hwmon/pmbus/xdpe12284.c    |  1 -
  drivers/hwmon/pmbus/zl6100.c       |  1 -
- 32 files changed, 9 insertions(+), 52 deletions(-)
+ 33 files changed, 9 insertions(+), 53 deletions(-)
 
 diff --git a/Documentation/hwmon/pmbus-core.rst b/Documentation/hwmon/pmbus-core.rst
 index e22c4f6808bc..73e23ab42cc3 100644
@@ -123,6 +123,18 @@ index 2c5b853d6c7f..aed7542d7ce5 100644
 -	.remove = pmbus_do_remove,
  	.id_table = pfe_device_id,
  };
+ 
+diff --git a/drivers/hwmon/pmbus/dni_dps460.c b/drivers/hwmon/pmbus/dni_dps460.c
+index 4e96a430bbe9..0d6fc448d27f 100644
+--- a/drivers/hwmon/pmbus/dni_dps460.c
++++ b/drivers/hwmon/pmbus/dni_dps460.c
+@@ -375,7 +375,6 @@ static int dni_dps460_remove(struct i2c_client *client)
+ 	sysfs_remove_group(&client->dev.kobj, &dni_dps460_attr_grp);
+ 	if (data->info)
+ 		kfree(data->info);
+-	pmbus_do_remove(client);
+ 	return 0;
+ }
  
 diff --git a/drivers/hwmon/pmbus/ibm-cffps.c b/drivers/hwmon/pmbus/ibm-cffps.c
 index 2fb7540ee952..d6bbbb223871 100644

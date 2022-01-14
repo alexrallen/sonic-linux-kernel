@@ -1,4 +1,3 @@
-From 1864562895af254c2c0320353a3ccae703287788 Mon Sep 17 00:00:00 2001
 From: Vadim Pasternak <vadimp@nvidia.com>
 Date: Mon, 12 Jul 2021 14:55:49 +0000
 Subject: [PATCH 51/83] 0055 platform_data/mlxreg: Add new type to

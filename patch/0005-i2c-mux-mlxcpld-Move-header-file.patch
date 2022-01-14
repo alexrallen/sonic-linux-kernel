@@ -1,4 +1,3 @@
-From e3d331596fc61d9410e64428c738218adaf3188d Mon Sep 17 00:00:00 2001
 From: Vadim Pasternak <vadimp@nvidia.com>
 Date: Fri, 22 Jan 2021 21:24:58 +0200
 Subject: [PATCH 05/83] 0005 i2c: mux: mlxcpld: Move header file i2c: mux:

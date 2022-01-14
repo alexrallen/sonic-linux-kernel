@@ -1,4 +1,3 @@
-From 4d6486e6cfc02d2425d2bbe70ee4c7b6d9fa732c Mon Sep 17 00:00:00 2001
 From: Vadim Pasternak <vadimp@nvidia.com>
 Date: Mon, 12 Jul 2021 21:40:46 +0000
 Subject: [PATCH 57/83] 0061 platform/mellanox: mlxreg-lc: Add

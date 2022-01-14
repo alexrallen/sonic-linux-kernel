@@ -1,4 +1,3 @@
-From 6682cc8b419cce574ccc07aaa0c880adf9f0d26a Mon Sep 17 00:00:00 2001
 From: Vadim Pasternak <vadimp@nvidia.com>
 Date: Thu, 10 Dec 2020 18:51:11 +0200
 Subject: [PATCH 01/83] 0001 i2c: mlxcpld: Update module license i2c: mlxcpld:

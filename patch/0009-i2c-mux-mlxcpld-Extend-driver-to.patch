@@ -1,4 +1,3 @@
-From 0ef581a91dca1e987740ed41c0534aa29d84362c Mon Sep 17 00:00:00 2001
 From: Vadim Pasternak <vadimp@nvidia.com>
 Date: Mon, 8 Feb 2021 22:16:04 +0200
 Subject: [PATCH 09/83] 0009 i2c: mux: mlxcpld: Extend driver to i2c: mux:

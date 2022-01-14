@@ -1,4 +1,3 @@
-From a2a289d3f5a0d84d4284033c4075e04466cae847 Mon Sep 17 00:00:00 2001
 From: Austin Kim <austindh.kim@gmail.com>
 Date: Wed, 9 Jun 2021 03:34:25 +0100
 Subject: [PATCH 40/83] 0041 net: ethtool: clear heap allocations net: ethtool:
