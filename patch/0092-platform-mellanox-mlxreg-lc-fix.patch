@@ -19,7 +19,7 @@ Signed-off-by: Hans de Goede <hdegoede@redhat.com>
  1 file changed, 3 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/platform/mellanox/mlxreg-lc.c b/drivers/platform/mellanox/mlxreg-lc.c
-index 2ddad96b154a..75c28179dd07 100644
+index c2ccb38df693..244676a12d74 100644
 --- a/drivers/platform/mellanox/mlxreg-lc.c
 +++ b/drivers/platform/mellanox/mlxreg-lc.c
 @@ -420,7 +420,7 @@ mlxreg_lc_create_static_devices(struct mlxreg_lc *mlxreg_lc, struct mlxreg_hotpl
